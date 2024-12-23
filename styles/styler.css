@@ -1,0 +1,212 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Graduate", sans-serif;
+    --color1: #FFF ;
+    --color2: #181818 ;
+    background-color: #181818;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+h1 {
+    font-size: medium;
+    color: var(--color1);
+    font-family: "Graduate", sans-serif;
+    text-align: center;
+    animation: lak 10s 0.3s infinite  linear;
+}
+@keyframes lak{
+    0%,100%{
+        color:var(--color1);
+    }
+    25%,75%{
+        color: purple;
+    }
+    50%{
+        color:yellow;
+    }
+
+}
+.logo img{
+    width: 125px;
+    height: 100px;
+}
+.menu ul{display: flex;}
+.menu ul li {padding-left: 30px;}
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu ul li:first-child{
+    justify-content: center;
+}
+.menu ul{
+    display:flex;
+    align-items: center;
+    list-style: none;
+}
+.menu  ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu ul li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media(max-width: 700px){
+    .menu{
+        
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+        
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color2);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        list-style: none;
+    }
+    .menu ul li {margin-top: 40px;}
+    .menu ul li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+.roster{
+    display: flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+    list-style: none;
+    justify-content: space-between;
+    color:var(--color1)
+}
+.roster li{
+    align-content: center;
+    border-style:outset;
+    border-width: 3vh;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    width: max-content;
+    box-sizing: border-box;
+    background-color: rgb(75, 35, 99);
+}
+.player{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    cursor:pointer;
+    position: relative;
+}
+.player img{
+    display:block;
+    width:100%;
+}
+.stats{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    color:var(--color1);
+    transition: 1s;
+    transition-delay: 0.2s;
+    transition-duration: 0.4s;
+    align-self: center;
+}
+caption{
+    background: rgba(0, 0, 0, 0.6);
+    font-size:large;
+    text-align: center;
+}
+.stats:hover{
+    opacity:1;
+}
+
+@media (max-width:1024px){
+    .roster li{
+        width: 50%;
+        
+    }
+    .roster li img{
+            width:100%;
+            height: 100%;
+    }
+}
+@media (min-width:1024px){
+    .roster li{
+        width: 33%;
+        
+    }
+    .roster li img{
+            width:100%;
+            height: 100%;
+    }
+}
+table{
+    border-spacing: 1rem;
+    border-collapse: separate;
+}
+@media (max-width:650px){
+    td{
+        font-size: 0.4rem;
+    }
+    tr{
+        line-height: 0.4rem;
+    }
+    caption{
+        font-size:0.5rem;
+    }
+    table{
+        border-spacing: 0px;
+    }
+}

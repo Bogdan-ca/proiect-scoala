@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bogdan Caraeane">
+        <meta name="description" content="Lakers team statistics 2023-2024">
+        <link rel="icon" href="svg/stats.svg" type="image/x-icon">
+        <title>Season stats lakers 2023-2024</title>
+        <link rel="stylesheet" href="styles/stylestats.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+                <div class="nav-bar">                       
+                        <h1>Lakers statistics 2023-2024</h1>
+                    <input type="checkbox" id="check">
+                    <div class="menu">
+                        <ul>
+                            <li class="logo"><a href="sitelak.html">
+                            <img src="svg/lakers-logo.svg" alt="Lakers logo"></a></li>
+                            <li><a href="roster.html">Roster</a></li>
+                            <li><a href="stats.html">Season stats</a></li>
+                            <li><a href="champs.html">Championships</a></li>
+                            <li><a href="season.html">Seasons</a></li>
+                        </ul>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </div>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </div>
+        </header>
+        <main> 
+            <div class="top">
+                <div class="move">
+                    <div class="spinleft">
+                        <object object="image/svg+xml" data="svg/basketball.svg" height="10vh" width="10vw"></object>
+                    </div>
+                </div>
+                <h2>Lakers season stats 2023-2024</h2>
+                <div class="move1">
+                    <div class="spinright">
+                        <object object="image/svg+xml" data="svg/basketball.svg" height="10vh" width="10vw"></object>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="content">
+                <div class="team-stats">
+                    <div class="team">
+                        <h2>Team stats</h2>
+                        <details>
+                            <summary>conference standings</summary>
+                            <div class="table-wrapper">
+                                <div class="table-container">
+                                    <table>
+                                        <tr>
+                                            <th>Seed</th>
+                                            <th>Team</th>
+                                            <th>Record</th>
+                                            <th>Points scored</th>
+                                            <th>Points allowed</th>
+                                            <th>Form</th>
+                                        </tr>
+                                        <tr>
+                                            <td>6.</td>
+                                            <td>Suns</td>
+                                            <td>49-33</td>
+                                            <td>116.2</td>
+                                            <td>113.2</td>
+                                            <td>W3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7.</td>
+                                            <td>Pelicans</td>
+                                            <td>49-33</td>
+                                            <td>115.1</td>
+                                            <td>110.7</td>
+                                            <td>L1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8.</td>
+                                            <td>Lakers</td>
+                                            <td>47-35</td>
+                                            <td>118.0</td>
+                                            <td>117.4</td>
+                                            <td>W2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9.</td>
+                                            <td>Kings</td>
+                                            <td>46-36</td>
+                                            <td>116.6</td>
+                                            <td>114.8</td>
+                                            <td>W3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.</td>
+                                            <td>Warriors</td>
+                                            <td>46-36</td>
+                                            <td>117.8</td>
+                                            <td>115.2</td>
+                                            <td>L2</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="stats">
+                            <summary>Season Stats</summary>
+                            <div class="table-wrapper1">
+                                <div class="table-container">
+                                    <table>
+                                        <tr>
+                                            <th data-cell="name"></th>
+                                            <th data-cell="games-played">GP</th>
+                                            <th data-cell="poins">PTS</th>
+                                            <th data-cell="rebounds">REB</th>
+                                            <th data-cell="assists">AST</th>
+                                            <th data-cell="steals">STL</th>
+                                            <th data-cell="blocks">BLK</th>
+                                            <th data-cell="field-goals-made">FGM</th>
+                                            <th data-cell="field-goals-attempted">FGA</th>
+                                            <th data-cell="field-goals-percentage">FG%</th>
+                                            <th data-cell="3-pointers-made">3PM</th>
+                                            <th data-cell="3-pointers-attempted">3PA</th>
+                                            <th data-cell="3-pointers-percentage">3P%</th>
+                                            <th data-cell="free-throws-made">FTM</th>
+                                            <th data-cell="free-throws-attemted">FTA</th>
+                                            <th data-cell="free-throws-percentage">FT%</th>
+                                            <th data-cell="offensive-rebounds">OREB</th>
+                                            <th data-cell="defensive-rebounds">DREB</th>
+                                            <th data-cell="turnovers">TOV</th>
+                                        </tr>
+                                        <tr>
+                                            <td data-cell="name">Team</td>
+                                            <td data-cell="games-played">82</td>
+                                            <td data-cell="poins">118.0</td>
+                                            <td data-cell="rebounds">43.1</td>
+                                            <td data-cell="assists">28.5</td>
+                                            <td data-cell="steals">7.4</td>
+                                            <td data-cell="blocks">5.5</td>
+                                            <td data-cell="field-goals-made">43.7</td>
+                                            <td data-cell="field-goals-attempted">87.5</td>
+                                            <td data-cell="field-goals-percentage">49.9</td>
+                                            <td data-cell="3-pointers-made">11.8</td>
+                                            <td data-cell="3-pointers-attempted">31.4</td>
+                                            <td data-cell="3-pointers-percentage">37.7</td>
+                                            <td data-cell="free-throws-made">18.9</td>
+                                            <td data-cell="free-throws-attempted">24.2</td>
+                                            <td data-cell="free-throws-percentage">78.2</td>
+                                            <td data-cell="offensive-rebounds">8.2</td>
+                                            <td data-cell="defensive-rebounds">34.9</td>
+                                            <td data-cell="turnovers">14.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-cell="name">Team Rank</td>
+                                            <td data-cell="games-played"></td>
+                                            <td data-cell="poins">6th</td>
+                                            <td data-cell="rebounds">18th</td>
+                                            <td data-cell="assists">5th</td>
+                                            <td data-cell="steals">19th</td>
+                                            <td data-cell="blocks">11th</td>
+                                            <td data-cell="field-goals-made">6th</td>
+                                            <td data-cell="field-goals-attempted">22nd</td>
+                                            <td data-cell="field-goals-percentage">2nd</td>
+                                            <td data-cell="3-pointers-made">24th</td>
+                                            <td data-cell="3-pointers-attempted">28th</td>
+                                            <td data-cell="3-pointers-percentage">8th</td>
+                                            <td data-cell="free-throws-made">2nd</td>
+                                            <td data-cell="free-throws-attempted">2nd</td>
+                                            <td data-cell="free-throws-percentage">15th</td>
+                                            <td data-cell="offensive-rebounds">30th</td>
+                                            <td data-cell="defensive-rebounds">2nd</td>
+                                            <td data-cell="turnovers">19th</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-cell="name">Opponent</td>
+                                            <td data-cell="games-played">82</td>
+                                            <td data-cell="poins">117.4</td>
+                                            <td data-cell="rebounds">44.0</td>
+                                            <td data-cell="assists">28.2</td>
+                                            <td data-cell="steals">8.2</td>
+                                            <td data-cell="blocks">4.8</td>
+                                            <td data-cell="field-goals-made">44.4</td>
+                                            <td data-cell="field-goals-attempted">93.7</td>
+                                            <td data-cell="field-goals-percentage">47.4</td>
+                                            <td data-cell="3-pointers-made">14.3</td>
+                                            <td data-cell="3-pointers-attempted">37.9</td>
+                                            <td data-cell="3-pointers-percentage">37.6</td>
+                                            <td data-cell="free-throws-made">14.3</td>
+                                            <td data-cell="free-throws-attempted">18.0</td>
+                                            <td data-cell="free-throws-percentage">79.5</td>
+                                            <td data-cell="offensive-rebounds">10.9</td>
+                                            <td data-cell="defensive-rebounds">33.2</td>
+                                            <td data-cell="turnovers">13.4</td>
+                                        </tr>
+                                    </table>
+                                    
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    <!-- <div class="season">
+                        <h2>Lakers season summary</h2>
+                        <p>The 2023-2024 Los Angeles Lakers had a successful season.
+
+                            Defensively, the Lakers were among the best in the league, utilizing their length and versatility to control the paint and disrupt opposing offenses. Their defense was a key driver of their success, particularly in high-pressure moments and in transition. On offense, the team thrived on ball movement and unselfish play, ensuring that scoring was spread across multiple contributors.
+                        </p>
+
+                    </div> -->
+                </div>
+                <div class="player">
+                    <h2>Stats Leaders</h2>
+                    <div class="leader">
+                        <div class="card">
+                            <h3>PPG</h3>
+                            <h4>25.7</h4>
+                            <img src="rosterresources/lebronjames.png" alt="Lebron James">
+                            <p>Lebron James</p>
+                        </div>
+                        <div class="card">
+                            <h3>APG</h3>
+                            <h4>8.3</h4>
+                            <img src="rosterresources/lebronjames.png" alt="Lebron James">
+                            <p>Lebron James</p>
+                        </div>
+                        <div class="card">
+                            <h3>RPG</h3>
+                            <h4>12.6</h4>
+                            <img src="rosterresources/anthonydavis.png" alt="Anthony Davis">
+                            <p>Anthony Davis</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
