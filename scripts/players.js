@@ -1,17 +1,42 @@
 const roster = [
     {
         name: "D'angelo Russell",
+        number: 1,
         image: "images/d'angelorussell.png",
         stats : {
             points: 18.0,
-            assists: 5.0,
-            rebounds: 2.2,
+            assists: 6.3,
+            rebounds: 3.1,
             steals: 0.9,
-            blocks: 0.1
+            blocks: 0.5
+        },
+        advancedStats: {
+            gamesplayed: 76,
+            gamesStarted: 69,
+            minutesPerGame: 32.7,
+            pointsPerGame: 18.0,
+            assistsPerGame: 6.3,
+            reboundsPerGame: 2.2,
+            offensiveReboundsPerGame: 0.4,
+            defensiveReboundsPerGame: 2.7,
+            stealsPerGame: 0.9,
+            blocksPerGame: 0.5,
+            fieldGoalMade: 6.5,
+            fieldGoalAttempted: 14.2,
+            fieldGoalPercentage: 45.6,
+            threePointMade: 3.0,
+            threePointAttempted: 7.2,
+            threePointPercentage: 41.5,
+            freeThrowMade: 2.1,
+            freeThrowAttempted: 2.5,
+            freeThrowPercentage: 82.8,
+            turnoversPerGame: 2.1,
+            personalFoulsPerGame: 2.1
         }
     },
     {
         name: "Jarred Vanderbilt",
+        number: 2,
         image: "images/jarredvanderbilt.png",
         stats: {
             points: 5.2,
@@ -19,10 +44,35 @@ const roster = [
             rebounds: 4.8,
             steals: 1.2,
             blocks: 0.2
+        },
+        advancedStats: {
+            gamesPlayed: 29,
+            gamesStarted: 6,
+            minutesPerGame: 20.0,
+            pointsPerGame: 5.2,
+            assistsPerGame: 1.2,
+            reboundsPerGame: 4.8,
+            offensiveReboundsPerGame: 1.4,
+            defensiveReboundsPerGame: 3.3,
+            stealsPerGame: 1.2,
+            blocksPerGame: 0.2,
+            fieldGoalMade: 2.0,
+            fieldGoalAttempted: 3.9,
+            fieldGoalPercentage: 51.8,
+            threePointMade: 0.3,
+            threePointAttempted: 0.9,
+            threePointPercentage: 29.6,
+            freeThrowMade: 0.8,
+            freeThrowAttempted: 1.2,
+            freeThrowPercentage: 66.7,
+            turnoversPerGame: 1.0,
+            personalFoulsPerGame: 1.5
         }
+
     },
     {
         name: "Anthony Davis",
+        number: 3,
         image: "images/anthonydavis.png",
         stats: {
             points: 24.7,
@@ -30,10 +80,34 @@ const roster = [
             rebounds: 12.6,
             steals: 1.2,
             blocks: 2.3
+        },
+        advancedStats: {
+            gamesPlayed: 76,
+            gamesStarted: 76,
+            minutesPerGame: 35.5,
+            pointsPerGame: 24.7,
+            assistsPerGame: 3.5,
+            reboundsPerGame: 12.6,
+            offensiveReboundsPerGame: 3.1,
+            defensiveReboundsPerGame: 9.5,
+            stealsPerGame: 1.2,
+            blocksPerGame: 2.3,
+            fieldGoalMade: 9.4,
+            fieldGoalAttempted: 16.9,
+            fieldGoalPercentage: 55.6,
+            threePointMade: 0.4,
+            threePointAttempted: 1.4,
+            threePointPercentage: 27.1,
+            freeThrowMade: 5.5,
+            freeThrowAttempted: 6.8,
+            freeThrowPercentage: 81.6,
+            turnoversPerGame: 2.1,
+            personalFoulsPerGame: 2.3
         }
     },
     {
         name: "Cam Reddish",
+        number: 5,
         image: "images/camreddish.png",
         stats: {
             points: 5.4,
@@ -41,10 +115,34 @@ const roster = [
             rebounds: 2.1,
             steals: 1.0,
             blocks: 0.3
+        },
+        advancedStats: {
+            gamesPlayed: 48,
+            gamesStarted: 26,
+            minutesPerGame: 20.5,
+            pointsPerGame: 5.4,
+            assistsPerGame: 1.0,
+            reboundsPerGame: 2.1,
+            offensiveReboundsPerGame: 0.6,
+            defensiveReboundsPerGame: 1.5,
+            stealsPerGame: 1.0,
+            blocksPerGame: 0.3,
+            fieldGoalMade: 1.9,
+            fieldGoalAttempted: 4.9,
+            fieldGoalPercentage: 38.9,
+            threePointMade: 0.8,
+            threePointAttempted: 2.3,
+            threePointPercentage: 33.6,
+            freeThrowMade: 0.9,
+            freeThrowAttempted: 1.1,
+            freeThrowPercentage: 75.9,
+            turnoversPerGame: 0.6,
+            personalFoulsPerGame: 1.3
         }
     },
     {
         name: "Gabe Vincent",
+        number: 7,
         image: "images/gabevincent.png",
         stats: {
             points: 3.1,
@@ -52,10 +150,34 @@ const roster = [
             rebounds: 0.8,
             steals: 0.8,
             blocks: 0.0
+        },
+        advancedStats: {
+            gamesPlayed: 11,
+            gamesStarted: 0,
+            minutesPerGame: 19.8,
+            pointsPerGame: 3.1,
+            assistsPerGame: 1.9,
+            reboundsPerGame: 0.8,
+            offensiveReboundsPerGame: 0.4,
+            defensiveReboundsPerGame: 0.5,
+            stealsPerGame: 0.8,
+            blocksPerGame: 0.0,
+            fieldGoalMade: 1.4,
+            fieldGoalAttempted: 4.5,
+            fieldGoalPercentage: 30.6,
+            threePointMade: 0.3,
+            threePointAttempted: 2.5,
+            threePointPercentage: 10.7,
+            freeThrowMade: 0.1,
+            freeThrowAttempted: 0.2,
+            freeThrowPercentage: 50.0,
+            turnoversPerGame: 0.5,
+            personalFoulsPerGame: 1.7
         }
     },
     {
         name: "Max Christie",
+        number: 12,
         image: "images/maxchristie.png",
         stats: {
             points: 4.2,
@@ -63,10 +185,35 @@ const roster = [
             rebounds: 2.1,
             steals: 0.3,
             blocks: 0.3
+        },
+        advancedStats: {
+            gamesPlayed: 67,
+            gamesStarted: 7,
+            minutesPerGame: 14.1,
+            pointsPerGame: 4.2,
+            assistsPerGame: 0.9,
+            reboundsPerGame: 2.1,
+            offensiveReboundsPerGame: 0.2,
+            defensiveReboundsPerGame: 1.9,
+            stealsPerGame: 0.3,
+            blocksPerGame: 0.3,
+            fieldGoalMade: 1.5,
+            fieldGoalAttempted: 3.6,
+            fieldGoalPercentage: 42.7,
+            threePointMade: 0.6,
+            threePointAttempted: 1.8,
+            threePointPercentage: 35.6,
+            freeThrowMade: 0.5,
+            freeThrowAttempted: 0.7,
+            freeThrowPercentage: 78.3,
+            turnoversPerGame: 0.5,
+            personalFoulsPerGame: 0.9
         }
+
     },
     {
         name: "Jaxson Hayes",
+        number: 11,
         image: "images/jaxsonhayes.png",
         stats: {
             points: 4.3,
@@ -74,10 +221,35 @@ const roster = [
             rebounds: 3.0,
             steals: 0.5,
             blocks: 0.4
+        },
+        advancedStats: {
+            gamesPlayed: 70,
+            gamesStarted: 5,
+            minutesPerGame: 12.5,
+            pointsPerGame: 4.3,
+            assistsPerGame: 0.5,
+            reboundsPerGame: 3.0,
+            offensiveReboundsPerGame: 1.0,
+            defensiveReboundsPerGame: 2.0,
+            stealsPerGame: 0.5,
+            blocksPerGame: 0.4,
+            fieldGoalMade: 1.8,
+            fieldGoalAttempted: 2.5,
+            fieldGoalPercentage: 72.0,
+            threePointMade: 0.0,
+            threePointAttempted: 0.1,
+            threePointPercentage: 0.0,
+            freeThrowMade: 0.7,
+            freeThrowAttempted: 1.2,
+            freeThrowPercentage: 62.2,
+            turnoversPerGame: 0.6,
+            personalFoulsPerGame: 1.8
         }
+
     },
     {
         name: "Austin Reaves",
+        number: 15,
         image: "images/austinreaves.png",
         stats: {
             points: 15.9,
@@ -85,10 +257,34 @@ const roster = [
             rebounds: 4.3,
             steals: 0.8,
             blocks: 0.3
+        },
+        advancedStats: {
+            gamesPlayed: 82,
+            gamesStarted: 57,
+            minutesPerGame: 32.1,
+            pointsPerGame: 15.9,
+            assistsPerGame: 5.5,
+            reboundsPerGame: 4.3,
+            offensiveReboundsPerGame: 0.7,
+            defensiveReboundsPerGame: 3.6,
+            stealsPerGame: 0.8,
+            blocksPerGame: 0.3,
+            fieldGoalMade: 5.6,
+            fieldGoalAttempted: 11.5,
+            fieldGoalPercentage: 48.6,
+            threePointMade: 1.9,
+            threePointAttempted: 5.1,
+            threePointPercentage: 36.7,
+            freeThrowMade: 2.8,
+            freeThrowAttempted: 3.3,
+            freeThrowPercentage: 85.3,
+            turnoversPerGame: 2.1,
+            personalFoulsPerGame: 1.9
         }
     },
     {
         name: "Maxwell Lewis",
+        number: 20,
         image: "images/maxwelllewis.png",
         stats: {
             points: 0.3,
@@ -96,10 +292,34 @@ const roster = [
             rebounds: 0.1,
             steals: 0.1,
             blocks: 0.0
+        },
+        advancedStats: {
+            gamesPlayed: 34,
+            gamesStarted: 0,
+            minutesPerGame: 3.0,
+            pointsPerGame: 0.3,
+            assistsPerGame: 0.2,
+            reboundsPerGame: 0.1,
+            offensiveReboundsPerGame: 0.1,
+            defensiveReboundsPerGame: 0.1,
+            stealsPerGame: 0.1,
+            blocksPerGame: 0.0,
+            fieldGoalMade: 0.1,
+            fieldGoalAttempted: 0.6,
+            fieldGoalPercentage: 19.0,
+            threePointMade: 0.0,
+            threePointAttempted: 0.3,
+            threePointPercentage: 11.1,
+            freeThrowMade: 0.1,
+            freeThrowAttempted: 0.1,
+            freeThrowPercentage: 66.7,
+            turnoversPerGame: 0.3,
+            personalFoulsPerGame: 0.1
         }
     },
     {
         name: "LeBron James",
+        number: 23,
         image: "images/lebronjames.png",
         stats: {
             points: 25.7,
@@ -107,10 +327,34 @@ const roster = [
             rebounds: 7.3,
             steals: 1.3,
             blocks: 0.5
+        },
+        advancedStats: {
+            gamesPlayed: 71,
+            gamesStarted: 71,
+            minutesPerGame: 35.3,
+            pointsPerGame: 25.7,
+            assistsPerGame: 8.3,
+            reboundsPerGame: 7.3,
+            offensiveReboundsPerGame: 0.9,
+            defensiveReboundsPerGame: 6.4,
+            stealsPerGame: 1.3,
+            blocksPerGame: 0.5,
+            fieldGoalMade: 9.6,
+            fieldGoalAttempted: 17.9,
+            fieldGoalPercentage: 54.0,
+            threePointMade: 2.1,
+            threePointAttempted: 5.1,
+            threePointPercentage: 41.0,
+            freeThrowMade: 4.3,
+            freeThrowAttempted: 5.7,
+            freeThrowPercentage: 75.0,
+            turnoversPerGame: 3.5,
+            personalFoulsPerGame: 1.1
         }
     },
     {
         name: "Rui Hachimura",
+        number: 28,
         image: "images/ruihachimura.png",
         stats: {
             points: 13.6,
@@ -118,17 +362,64 @@ const roster = [
             rebounds: 4.3,
             steals: 0.6,
             blocks: 0.4
+        },
+        advancedStats: {
+            gamesPlayed: 68,
+            gamesStarted: 39,
+            minutesPerGame: 26.9,
+            pointsPerGame: 13.6,
+            assistsPerGame: 1.2,
+            reboundsPerGame: 4.3,
+            offensiveReboundsPerGame: 0.9,
+            defensiveReboundsPerGame: 3.5,
+            stealsPerGame: 0.6,
+            blocksPerGame: 0.4,
+            fieldGoalMade: 5.3,
+            fieldGoalAttempted: 9.9,
+            fieldGoalPercentage: 53.7,
+            threePointMade: 1.4,
+            threePointAttempted: 3.4,
+            threePointPercentage: 42.2,
+            freeThrowMade: 1.5,
+            freeThrowAttempted: 2.0,
+            freeThrowPercentage: 73.9,
+            turnoversPerGame: 0.7,
+            personalFoulsPerGame: 1.5
         }
     },
     {
         name: "Christian Wood",
+        number: 35,
         image: "images/christianwood.png",
         stats: {
             points: 6.9,
             assists: 1.0,
-            rebounds: 7.3,
-            steals: 0.4,
-            blocks: 1.1
+            rebounds: 5.1,
+            steals: 0.3,
+            blocks: 0.7
+        },
+        advancedStats: {
+            gamesPlayed: 50,
+            gamesStarted: 1,
+            minutesPerGame: 17.4,
+            pointsPerGame: 6.9,
+            assistsPerGame: 1.0,
+            reboundsPerGame: 5.1,
+            offensiveReboundsPerGame: 0.8,
+            defensiveReboundsPerGame: 4.3,
+            stealsPerGame: 0.3,
+            blocksPerGame: 0.7,
+            fieldGoalMade: 2.5,
+            fieldGoalAttempted: 5.3,
+            fieldGoalPercentage: 46.6,
+            threePointMade: 0.7,
+            threePointAttempted: 2.3,
+            threePointPercentage: 30.7,
+            freeThrowMade: 1.3,
+            freeThrowAttempted: 1.9,
+            freeThrowPercentage: 70.2,
+            turnoversPerGame: 1.0,
+            personalFoulsPerGame: 1.4
         }
     },
 ]
