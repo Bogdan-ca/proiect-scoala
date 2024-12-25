@@ -2,7 +2,7 @@ let rosterHTML = '';
 roster.forEach((player) => {
     rosterHTML += `
         <li class="player">
-            <button onclick="showPlayerStats('${player.number}')">
+            <button onclick="window.location.href = 'advancedstats.html'">
             <img src="${player.image}" alt="${player.name}">
                 <table class="stats">
                    <caption>${player.name}</caption>
