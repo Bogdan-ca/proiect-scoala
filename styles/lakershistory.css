@@ -8,7 +8,6 @@ html {
     font-family: "Graduate", sans-serif;
     --color1: #FFF ;
     --color2: #181818 ;
-    --title-color: #FDB927;
 }
 .nav-bar {
     width: 100%;
@@ -115,82 +114,127 @@ h1 {
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
-body {
-    background-color: var(--color2);
+body{
+    background-image: url(../images/yellow-purple-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
-.backgr-video {
-    overflow: none;
-    padding-top: 56.25%; /* 16:9 */
-    position: relative;
-    animation: fadein 3s  5s ease-in-out forwards;
-    opacity: 0;
+main{
+    display: flex;
+    color:var(--color1);
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.8); 
+    opacity: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+p{
+    border-style:ridge;
+    margin: 2%;
+    border-radius: 10%;
+    padding: 3%;
+    text-align: justify;
+    text-transform:capitalize;
     
 }
-@keyframes fadein {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+main p:nth-of-type(2n+1){
+    border-color: purple;
+    margin-right: 20%;
 }
-@keyframes fadeout {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+main p:nth-of-type(2n+1):hover{
+    background-color:  purple;
 }
-.backgr-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+main p:nth-of-type(2n)
+{
+    border-color: yellow;
+    margin-left: 20%;
 }
-.home {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    padding: 2rem;
-    border-radius: 10px;
+main p:nth-of-type(2n):hover
+{
+    background-color: rgba(255, 153, 0, 0.673);
+
+}
+@media (min-width:650px){
+    h2{
     text-align: center;
-    animation:
-    fadein 1s ease-in-out 0s forwards,
-    fadeout 2s ease-in-out 4s forwards;
-    opacity: 0;
-}
-.home h2 {
-    color: var(--title-color);
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
+    font-size: 4em;
+    margin-top: 2vh;
+    }
+    main p{
+        flex-grow: 1;
+        font-size: 3vh;
+    }
 
-.home p {
-    color: white;
-    font-size: 1.5rem;
 }
-.description {
-    padding: 2rem;
-    animation: fadein 5s  5s ease-in-out forwards;
-    opacity: 0;
-}
-.description h2{
-    color: var(--title-color);
-    font-size: 2rem;
+@media (max-width:650px){
+    h2{
     text-align: center;
-    margin: 2rem 0;
+    margin-top: 2vh;
+    font-size: 2em;
+    }
+    main p{
+        flex-grow:1;
+        font-size:2vh;
+    }
 }
-.description p {
-    color: white;
-    font-size: 1rem;
+#era1 h3{
     text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size:2em;
 }
-
-.page-item h3 {
-    color: var(--title-color);
-    font-size: 1.5rem;
+#era1 p:hover{
+    background-color: purple;
+}
+#era2 h3{
     text-align: center;
-    margin: 1rem 0;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size:2em;
 }
+#era2 p{
+    border-color: yellow;
+    margin-right: 0;
+    margin-left: 10%;
+}
+#era2 p:hover{
+    background-color: rgba(255, 153, 0, 0.673);
 
-
-
+}
+#era3 h3{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size:2em;
+}
+#era3 p:hover{
+    background-color: purple;
+}
+#era4 h3{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size:2em;
+}
+#era4 p{
+    border-color: yellow;
+    margin-right: 0;
+    margin-left: 10%;
+}
+#era4 p:hover{
+    background-color: rgba(255, 153, 0, 0.673);
+}
+#era5 h3{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size:2em;
+}
+#era5 p:hover{
+    background-color: purple;
+}

@@ -318,8 +318,9 @@ table tr > td:first-child{
     text-align: center;
     padding-bottom: 1em;
 }
-.shooting {
+.shooting-wrapper {
     margin: 2vh 5%;
+    text-align: center;
     font-size: 2em;
     background-color: purple;
     border-radius: 5vh;
@@ -357,35 +358,35 @@ table tr > td:first-child{
     .played {
         background-color: rgba(255, 153, 0, 0.673);
     }
-    .shooting{
+    .shooting-wrapper{
         margin-top: 0%;
     }
-    /* .shooting tr:first-of-type > td{
-        font-size: 1.5em;
-    }
-    .sub-title{
-        font-size: 1em;
-    } */
 }
 @media (max-width: 1000px){
     .shooting tr:first-of-type > td{
         font-size: 1em;
     }
     .sub-title{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .shooting td, .shooting th {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem;
+    }
+    .shooting-wrapper {
+        margin-left:5%;
+        margin-right: 5%;
+        overflow-x: scroll;
     }
 }
 @media (max-width: 650px) {
     .main-stats li {
         width: 33%;
     }
-    .shooting-wrapper{
-        overflow-y: scroll;
+    .common-data {
+        font-size: 0.75rem;
     }
-    .shooting th, .shooting td {
-        padding: 1rem 0.5rem;
+    .shooting {
+        overflow-x: scroll;
     }
 }
