@@ -2,7 +2,10 @@ const roster = [
     {
         name: "D'angelo Russell",
         number: 1,
+        id: 1,
+        position: "Point Guard",
         image: "images/d'angelorussell.png",
+        highlight: "https://www.youtube.com/embed/HEy3Ljfs6pI?autoplay=1&mute=1&loop=1&playlist=HEy3Ljfs6pI&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats : {
             points: 18.0,
             assists: 6.3,
@@ -11,7 +14,7 @@ const roster = [
             blocks: 0.5
         },
         advancedStats: {
-            gamesplayed: 76,
+            gamesPlayed: 76,
             gamesStarted: 69,
             minutesPerGame: 32.7,
             pointsPerGame: 18.0,
@@ -31,13 +34,31 @@ const roster = [
             freeThrowAttempted: 2.5,
             freeThrowPercentage: 82.8,
             turnoversPerGame: 2.1,
-            personalFoulsPerGame: 2.1
+            personalFoulsPerGame: 2.1,
+            trueShootingPercentage: 56.7,
+            plusMinus: 1.2
+
+        },
+        basicStats: {
+            height: `6'3"`,
+            feet: 6,
+            inches: 3,
+            weight: 200,
+            age: 27,
+            birthdate: "Feb 23, 1996",
+            country: "USA",
+            draftPick: "R1 P2 2015",
+            aquired: "Trade 2023",
+            experience: "9 Years"
         }
     },
     {
         name: "Jarred Vanderbilt",
         number: 2,
+        id: 2,
+        position: "Power Forward",
         image: "images/jarredvanderbilt.png",
+        highlight: "https://www.youtube.com/embed/SDaAmtjT9eg?autoplay=1&mute=1&loop=1&playlist=SDaAmtjT9eg&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 5.2,
             assists: 1.2,
@@ -66,14 +87,31 @@ const roster = [
             freeThrowAttempted: 1.2,
             freeThrowPercentage: 66.7,
             turnoversPerGame: 1.0,
-            personalFoulsPerGame: 1.5
+            personalFoulsPerGame: 1.5,
+            trueShootingPercentage: 40.1,
+            plusMinus: -0.3
+        },
+        basicStats: {
+            height: `6'9"`,
+            feet: 6,
+            inches: 9,
+            weight: 230,
+            age: 24,
+            birthdate: "Apr 3, 1999",
+            country: "USA",
+            draftPick: "R2 P41 2018",
+            aquired: "Trade 2023",
+            experience: "5 Years"
         }
 
     },
     {
         name: "Anthony Davis",
         number: 3,
+        id: 3,
+        position: "Center",
         image: "images/anthonydavis.png",
+        highlight: "https://www.youtube.com/embed/YOJjIQDuNhY?autoplay=1&mute=1&loop=1&playlist=YOJjIQDuNhY&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 24.7,
             assists: 3.5,
@@ -102,13 +140,30 @@ const roster = [
             freeThrowAttempted: 6.8,
             freeThrowPercentage: 81.6,
             turnoversPerGame: 2.1,
-            personalFoulsPerGame: 2.3
+            personalFoulsPerGame: 2.3,
+            trueShootingPercentage: 61.2,
+            plusMinus: 2.1
+        },
+        basicStats: {
+            height: `6'10"`,
+            feet: 6,
+            inches: 10,
+            weight: 253,
+            age: 30,
+            birthdate: "Mar 11, 1993",
+            country: "USA",
+            draftPick: "R1 P1 2012",
+            aquired: "Trade 2019",
+            experience: "12 Years"
         }
     },
     {
         name: "Cam Reddish",
         number: 5,
+        id: 4,
+        position: "Small Forward",
         image: "images/camreddish.png",
+        highlight: "https://www.youtube.com/embed/2aLrJlGGW1U?autoplay=1&mute=1&loop=1&playlist=2aLrJlGGW1U&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 5.4,
             assists: 1.0,
@@ -137,13 +192,31 @@ const roster = [
             freeThrowAttempted: 1.1,
             freeThrowPercentage: 75.9,
             turnoversPerGame: 0.6,
-            personalFoulsPerGame: 1.3
+            personalFoulsPerGame: 1.3,
+            trueShootingPercentage: 50.1,
+            plusMinus: -1.2
+        },
+        basicStats: {
+            height: `6'8"`,
+            feet: 6,
+            inches: 8,
+            weight: 218,
+            age: 24,
+            birthdate: "Sep 1, 1999",
+            country: "USA",
+            draftPick: "R1 P10 2018",
+            aquired: "Trade 2023",
+            experience: "6 Years"
         }
+
     },
     {
         name: "Gabe Vincent",
         number: 7,
+        id: 5,
+        position: "Point Guard",
         image: "images/gabevincent.png",
+        highlight: "https://www.youtube.com/embed/uym_2Cih1Ro?autoplay=1&mute=1&loop=1&playlist=uym_2Cih1Ro&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 3.1,
             assists: 1.9,
@@ -172,13 +245,30 @@ const roster = [
             freeThrowAttempted: 0.2,
             freeThrowPercentage: 50.0,
             turnoversPerGame: 0.5,
-            personalFoulsPerGame: 1.7
+            personalFoulsPerGame: 1.7,
+            trueShootingPercentage: 36.2,
+            plusMinus: -3.2
+        },
+        basicStats: {
+            height: `6'3"`,
+            feet: 6,
+            inches: 3,
+            weight: 200,
+            age: 27,
+            birthdate: "Jun 14, 1996",
+            country: "USA",
+            draftPick: "Undrafted 2018",
+            aquired: "Free Agent 2024",
+            experience: "6 Years"
         }
     },
     {
         name: "Max Christie",
         number: 12,
+        id: 6,
+        position: "Shooting Guard",
         image: "images/maxchristie.png",
+        highlight: "https://www.youtube.com/embed/ie8XaWvUKEs?autoplay=1&mute=1&loop=1&playlist=ie8XaWvUKEs&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 4.2,
             assists: 0.9,
@@ -207,14 +297,32 @@ const roster = [
             freeThrowAttempted: 0.7,
             freeThrowPercentage: 78.3,
             turnoversPerGame: 0.5,
-            personalFoulsPerGame: 0.9
+            personalFoulsPerGame: 0.9,
+            trueShootingPercentage: 38.2,
+            plusMinus: -0.5
+
+        },
+        basicStats: {
+            height: `6'6"`,
+            feet: 6,
+            inches: 6,
+            weight: 210,
+            age: 20,
+            birthdate: "Feb 10, 2003",
+            country: "USA",
+            draftPick: "R1 P15 2022",
+            aquired: "Draft 2022",
+            experience: "2 Years"
         }
 
     },
     {
         name: "Jaxson Hayes",
         number: 11,
+        id: 7,
+        position: "Center",
         image: "images/jaxsonhayes.png",
+        highlight: "https://www.youtube.com/embed/gGAB_kpMxiE?autoplay=1&mute=1&loop=1&playlist=gGAB_kpMxiE&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 4.3,
             assists: 0.5,
@@ -243,14 +351,31 @@ const roster = [
             freeThrowAttempted: 1.2,
             freeThrowPercentage: 62.2,
             turnoversPerGame: 0.6,
-            personalFoulsPerGame: 1.8
+            personalFoulsPerGame: 1.8,
+            trueShootingPercentage: 48.2,
+            plusMinus: -0.6
+        },
+        basicStats: {
+            height: `6'11"`,
+            feet: 6,
+            inches: 11,
+            weight: 220,
+            age: 21,
+            birthdate: "May 23, 2000",
+            country: "France",
+            draftPick: "R1 P7 2020",
+            aquired: "Trade 2023",
+            experience: "3 Years"
         }
 
     },
     {
         name: "Austin Reaves",
         number: 15,
+        id: 8,
+        position: "Shooting Guard",
         image: "images/austinreaves.png",
+        highlight: "https://www.youtube.com/embed/tA9fnxkPiEk?autoplay=1&mute=1&loop=1&playlist=tA9fnxkPiEk&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 15.9,
             assists: 5.5,
@@ -279,13 +404,30 @@ const roster = [
             freeThrowAttempted: 3.3,
             freeThrowPercentage: 85.3,
             turnoversPerGame: 2.1,
-            personalFoulsPerGame: 1.9
+            personalFoulsPerGame: 1.9,
+            trueShootingPercentage: 51.2,
+            plusMinus: 1.7
+        },
+        basicStats: {
+            height: `6'5"`,
+            feet: 6,
+            inches: 5,
+            weight: 210,
+            age: 25,
+            birthdate: "Aug 29, 1999",
+            country: "USA",
+            draftPick: "Undrafted 2021",
+            aquired: "Draft 2021",
+            experience: "3 Year"
         }
     },
     {
         name: "Maxwell Lewis",
         number: 20,
+        id: 9,
+        position: "Shooting Guard",
         image: "images/maxwelllewis.png",
+        highlight: "https://www.youtube.com/embed/DIW0HRjBCGg?autoplay=1&mute=1&loop=1&playlist=DIW0HRjBCGg&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 0.3,
             assists: 0.2,
@@ -314,12 +456,30 @@ const roster = [
             freeThrowAttempted: 0.1,
             freeThrowPercentage: 66.7,
             turnoversPerGame: 0.3,
-            personalFoulsPerGame: 0.1
+            personalFoulsPerGame: 0.1,
+            trueShootingPercentage: 21.0,
+            plusMinus: -2.8
+
+        },
+        basicStats: {
+            height: `6'7"`,
+            feet: 6,
+            inches: 7,
+            weight: 200,
+            age: 21,
+            birthdate: "Jan 10, 2002",
+            country: "USA",
+            draftPick: "Undrafted 2023",
+            aquired: "Draft 2023",
+            experience: "1 Year"
         }
     },
     {
         name: "LeBron James",
         number: 23,
+        id: 10,
+        position: "Small Forward",
+        highlight: "https://www.youtube.com/embed/QiwVq7SGluo?autoplay=1&mute=1&loop=1&playlist=QiwVq7SGluo&controls=0&showinfo=0&rel=0&modestbranding=1",
         image: "images/lebronjames.png",
         stats: {
             points: 25.7,
@@ -349,13 +509,32 @@ const roster = [
             freeThrowAttempted: 5.7,
             freeThrowPercentage: 75.0,
             turnoversPerGame: 3.5,
-            personalFoulsPerGame: 1.1
+            personalFoulsPerGame: 1.1,
+            trueShootingPercentage: 55.7,
+            plusMinus: 2.0
+
+
+        },
+        basicStats: {
+            height: `6'9"`,
+            feet: 6,
+            inches: 9,
+            weight: 250,
+            age: 39,
+            birthdate: "Dec 30, 1984",
+            country: "USA",
+            draftPick: "R1 P1 2003",
+            aquired: "Free agent 2019",
+            experience: "21 Years"
         }
     },
     {
         name: "Rui Hachimura",
         number: 28,
+        id: 11,
+        position: "Power Forward",
         image: "images/ruihachimura.png",
+        highlight: "https://www.youtube.com/embed/5cnA8LQxi0U?autoplay=1&mute=1&loop=1&playlist=5cnA8LQxi0U&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 13.6,
             assists: 1.2,
@@ -384,13 +563,30 @@ const roster = [
             freeThrowAttempted: 2.0,
             freeThrowPercentage: 73.9,
             turnoversPerGame: 0.7,
-            personalFoulsPerGame: 1.5
+            personalFoulsPerGame: 1.5,
+            trueShootingPercentage: 49.2,
+            plusMinus: 0.9
+        },
+        basicStats: {
+            height: `6'8"`,
+            feet: 6,
+            inches: 8,
+            weight: 230,
+            age: 25,
+            birthdate: "Feb 8, 1998",
+            country: "Japan",
+            draftPick: "R1 P9 2019",
+            aquired: "Trade 2023",
+            experience: "5 Years"
         }
     },
     {
         name: "Christian Wood",
         number: 35,
+        id: 12,
+        position: "Center",
         image: "images/christianwood.png",
+        highlight: "https://www.youtube.com/embed/7Jc-05itGJM?autoplay=1&mute=1&loop=1&playlist=7Jc-05itGJM&controls=0&showinfo=0&rel=0&modestbranding=1",
         stats: {
             points: 6.9,
             assists: 1.0,
@@ -419,7 +615,21 @@ const roster = [
             freeThrowAttempted: 1.9,
             freeThrowPercentage: 70.2,
             turnoversPerGame: 1.0,
-            personalFoulsPerGame: 1.4
+            personalFoulsPerGame: 1.4,
+            trueShootingPercentage: 53.9,
+            plusMinus: 0.1
+        },
+        basicStats: {
+            height: `6'10"`,
+            feet: 6,
+            inches: 10,
+            weight: 214,
+            age: 26,
+            birthdate: "Sep 27, 1995",
+            country: "USA",
+            draftPick: "Undrafted 2016",
+            aquired: "Trade 2023",
+            experience: "7 Years"
         }
     },
 ]

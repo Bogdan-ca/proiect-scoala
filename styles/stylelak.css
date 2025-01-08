@@ -119,7 +119,6 @@ body {
     background-color: var(--color2);
 }
 .backgr-video {
-    overflow: none;
     padding-top: 56.25%; /* 16:9 */
     position: relative;
     animation: fadein 3s  5s ease-in-out forwards;
@@ -142,6 +141,7 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+    border: none;
 }
 .home {
     position: absolute;
@@ -191,6 +191,3 @@ body {
     text-align: center;
     margin: 1rem 0;
 }
-
-
-

@@ -8,7 +8,10 @@ html {
     font-family: "Graduate", sans-serif;
     --color1: #FFF ;
     --color2: #181818 ;
-    background-color: #181818;
+    background-color: black;
+    --title-color: #FDB927;
+    --laker-purple: #582C83;
+    --laker-gold: #FFC72C;
 }
 .nav-bar {
     width: 100%;
@@ -219,4 +222,195 @@ table{
 }
 table tr > td:first-child{
     text-align: left;
+}
+
+/*css for advanced stats page inside roster page*/
+
+.advanced {
+    /*background-color: #1d428a;*/
+    /*background-color: #163573;*/
+
+    color: white;
+}
+.player-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "main-stats player-highlights"
+    "shooting";
+
+}
+.player-profile {
+    position: relative;
+    background-color: var(--laker-purple);
+    display: flex;
+}
+.player-change {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.player-change img {
+    height: 10rem;
+    width: 100%;
+}
+.player-change h3 {
+    font-size: 2em;
+    color: var(--title-color);
+}
+.btn {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: yellow;
+}
+.btn:hover {
+    color: #FDB927;
+}
+.cancel-btn {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.player-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1.2em;
+}
+.physical-stats {
+    margin-top: 2em;
+}
+.season-stats {
+    margin-top: 4em;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.played-stats {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+}
+.played-stats li {
+    padding: 1rem;
+    text-align: center;
+    width: 33%;
+}
+.main-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 5%;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: var(--laker-gold);
+    color: var(--laker-purple);
+    padding: 1rem;
+    border-radius: 5vh;
+    margin: 3vh 5%;
+    margin-right: 1%;
+}
+.main-stats li {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+.main-stats li:not(:first-of-type) {
+    width: 25%;
+}
+.main-stats li:first-of-type {
+    width: 100%;
+    text-align: center;
+}
+.player-highlights {
+    margin: 3vh 5%;
+    margin-left: 1%;
+    align-self: center;  
+}
+.player-highlights iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: none;
+}
+.common-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: var(--laker-gold);
+    color: var(--laker-purple);
+    padding: 1rem;
+    border-radius: 5vh;
+    margin: 3vh 5%;
+    margin-left: 1%;
+    text-transform: capitalize;
+    display: none;
+}
+.third{
+    width: 33%;
+    font-size: 1.5em;
+    padding-top: 1rem;
+    text-align: center;
+}
+.half {
+    width: 50%;
+    font-size: 1.5em;
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+@media (max-width: 1000px){
+    .title-data {
+        display: none;
+    }
+    .player-info {
+        font-size: .8em;
+    }
+}
+@media (max-width:880px) {
+    .player-stats {
+        display: flex;
+        flex-direction: column;
+    }
+    .player-info{
+        display:none;
+    }
+    .common-data {
+        display: flex;
+        margin: 2vh 5%;
+    }
+    .main-stats {
+        margin: 2vh 5%;
+        background-color: var(--laker-purple);
+        color: var(--laker-gold);
+    }
+    .player-highlights {
+        margin: 2vh 8%;
+        align-self: normal;
+    }
+}
+@media (max-width: 650px) {
+    .main-stats li:not(:first-of-type) {
+        width: 33%;
+    }
+    .common-data {
+        font-size: 0.6rem;
+    }
+    .main-stats {
+        font-size: 0.8rem;
+    }
+    .shooting {
+        overflow-x: hidden;
+    }
 }
