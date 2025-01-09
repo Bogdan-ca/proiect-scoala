@@ -12,6 +12,7 @@ html {
     --title-color: #FDB927;
     --laker-purple: #582C83;
     --laker-gold: #FFC72C;
+    color: white;
 }
 .nav-bar {
     width: 100%;
@@ -224,14 +225,6 @@ table tr > td:first-child{
     text-align: left;
 }
 
-/*css for advanced stats page inside roster page*/
-
-.advanced {
-    /*background-color: #1d428a;*/
-    /*background-color: #163573;*/
-
-    color: white;
-}
 .player-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -274,6 +267,10 @@ table tr > td:first-child{
     position: absolute;
     right: 2%;
     top: 2%;
+}
+.disabled {
+    cursor: not-allowed;
+    color:#181818
 }
 .player-info {
     display: flex;

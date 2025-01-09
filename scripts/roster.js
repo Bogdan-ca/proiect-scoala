@@ -57,6 +57,7 @@ function showPlayerStats(playerId) {
     if (currentEventListener) {
         window.removeEventListener('keydown', currentEventListener);
     }
+
     let stats = roster.find((player) => player.id === playerId);
     rosterHTML = `<div class="advanced">
                 <div class="player-profile">                    
@@ -67,11 +68,17 @@ function showPlayerStats(playerId) {
                                 </div>
                                 <div class="player-profile">
                                     <button class="btn left" onclick="
-                                    if (${idcounter} != 1) {idcounter -= 1; showPlayerStats(idcounter);}"
+                                    if (${idcounter} != 1) {idcounter -= 1; 
+                                    if (idcounter === 11) 
+                                    rightButton.classList.remove('disabled');
+                                    showPlayerStats(idcounter);}"
                                     ><i class="fas fa-chevron-left"></i></button>
                                     <img src=${stats.image} alt="${stats.name}">
                                     <button class="btn right" onclick = "
-                                    if (${idcounter} != 12) {idcounter += 1; showPlayerStats(idcounter);}"
+                                    if (${idcounter} != 12) {idcounter += 1;
+                                    if (idcounter === 2) 
+                                    leftButton.classList.remove('disabled');
+                                    showPlayerStats(idcounter);}"
                                     ><i class="fas fa-chevron-right"></i></button>
                                 </div>
                                    
@@ -155,6 +162,11 @@ function showPlayerStats(playerId) {
                 </div>
             </div>`
     document.querySelector('.build').innerHTML = rosterHTML;
+
+    const leftButton = document.querySelector('.left');
+    const rightButton = document.querySelector('.right');
+
+
     currentEventListener = (event) => {
        
 
@@ -171,11 +183,17 @@ function showPlayerStats(playerId) {
                     idcounter -= 1;
                     showPlayerStats(idcounter);
                 }
-        }
-       
-        
-        
+        } 
     };
+
+    
+    if (idcounter === 1) {
+        leftButton.classList.add('disabled');
+    }
+    if (idcounter === 12) {
+        rightButton.classList.add('disabled');
+    }
+
     window.addEventListener('keydown', currentEventListener);
 }
 function feetToMeters(feet, inches ) {
