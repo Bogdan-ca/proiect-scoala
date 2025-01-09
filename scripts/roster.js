@@ -1,5 +1,6 @@
 let rosterHTML = '';
 let idcounter;
+let currentEventListener = null;
 function buildRoster() {
     rosterHTML = '<ul class="roster">';
     idcounter = 0;
@@ -53,9 +54,10 @@ function buildRoster() {
 
 function showPlayerStats(playerId) {
     rosterHTML = '';
-    console.log(playerId);
+    if (currentEventListener) {
+        window.removeEventListener('keydown', currentEventListener);
+    }
     let stats = roster.find((player) => player.id === playerId);
-    console.log(stats);
     rosterHTML = `<div class="advanced">
                 <div class="player-profile">                    
                             <div class="player-change">
@@ -64,10 +66,11 @@ function showPlayerStats(playerId) {
                                     <p>${stats.position} #${stats.number}</p>
                                 </div>
                                 <div class="player-profile">
-                                    <button class="btn" onclick="
-                                    if (${idcounter} != 0) {idcounter -= 1; showPlayerStats(idcounter);}"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="btn left" onclick="
+                                    if (${idcounter} != 1) {idcounter -= 1; showPlayerStats(idcounter);}"
+                                    ><i class="fas fa-chevron-left"></i></button>
                                     <img src=${stats.image} alt="${stats.name}">
-                                    <button class="btn" onclick = "
+                                    <button class="btn right" onclick = "
                                     if (${idcounter} != 12) {idcounter += 1; showPlayerStats(idcounter);}"
                                     ><i class="fas fa-chevron-right"></i></button>
                                 </div>
@@ -111,7 +114,7 @@ function showPlayerStats(playerId) {
                                     </tr>
                                 </table>
                             </div>
-                            <button class="btn cancel-btn" onclick="window.location.href = 'roster.html'"><i class="fas fa-times"></i></button>
+                            <button class="btn cancel-btn" onclick="buildRoster()"><i class="fas fa-times"></i></button>
                 </div>
                 
                 <div class="player-stats">
@@ -122,7 +125,7 @@ function showPlayerStats(playerId) {
                             <li class="third"><p>Country</p><p>${stats.basicStats.country}</p></li>
                             <li class="third"><p>Draft pick</p><p>${stats.basicStats.draftPick}</p></li>
                             <li class="third"><p>Aquired</p><p>${stats.basicStats.aquired}</p></li>
-                            <li class="half"><p>Birthdate</p><p>${stats.basicStats.birthdata}</p></li>
+                            <li class="half"><p>Birthdate</p><p>${stats.basicStats.birthdate}</p></li>
                             <li class="half"><p>Experience</p><p>${stats.basicStats.experience}</p></li>
                         </ul>
 
@@ -152,6 +155,28 @@ function showPlayerStats(playerId) {
                 </div>
             </div>`
     document.querySelector('.build').innerHTML = rosterHTML;
+    currentEventListener = (event) => {
+       
+
+            if (idcounter != 0) {
+            if (event.key === 'Escape') 
+                buildRoster();
+            if (event.key === 'ArrowRight')
+                if (idcounter < roster.length) {
+                    idcounter += 1;
+                    showPlayerStats(idcounter);
+                }
+            if (event.key === 'ArrowLeft')
+                if (idcounter > 1) {
+                    idcounter -= 1;
+                    showPlayerStats(idcounter);
+                }
+        }
+       
+        
+        
+    };
+    window.addEventListener('keydown', currentEventListener);
 }
 function feetToMeters(feet, inches ) {
     const totalInches = (feet * 12) + inches;

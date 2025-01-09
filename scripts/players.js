@@ -101,7 +101,7 @@ const roster = [
             country: "USA",
             draftPick: "R2 P41 2018",
             aquired: "Trade 2023",
-            experience: "5 Years"
+            experience: "6 Years"
         }
 
     },
@@ -365,7 +365,7 @@ const roster = [
             country: "France",
             draftPick: "R1 P7 2020",
             aquired: "Trade 2023",
-            experience: "3 Years"
+            experience: "4 Years"
         }
 
     },
@@ -629,7 +629,7 @@ const roster = [
             country: "USA",
             draftPick: "Undrafted 2016",
             aquired: "Trade 2023",
-            experience: "7 Years"
+            experience: "8 Years"
         }
     },
 ]
