@@ -8,6 +8,9 @@ html {
     font-family: "Graduate", sans-serif;
     --color1: #FFF ;
     --color2: #181818 ;
+    --title-color: #FDB927;
+    --laker-purple: #582C83;
+    --laker-gold: #FFC72C;
 }
 .nav-bar {
     width: 100%;
@@ -124,117 +127,108 @@ body{
     flex-direction: column;
 }
 main{
+    background-color: rgba(0,0,0,0.5);
+}
+.history{
     display: flex;
-    color:var(--color1);
     flex-direction: column;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.8); 
-    opacity: 1;
-    flex-grow: 1;
-    flex-wrap: wrap;
 }
-p{
-    border-style:ridge;
-    margin: 2%;
-    border-radius: 10%;
-    padding: 3%;
+.home h2,h3 {
+    text-align: center;
+    font-size: 3em;
+    color: var(--title-color);
+    margin: 3vh 5%;
+}
+.home p:first-of-type{
+    background-color: var(--laker-purple);
+    color:var(--laker-gold)
+}
+.home p:last-of-type{
+    background-color: var(--laker-gold);
+    color:var(--laker-purple)
+}
+.home p{
+    font-size: 1.5em;
+    padding: 2em;
+    border-radius: 2vh;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin: 5% 5%;
     text-align: justify;
-    text-transform:capitalize;
-    
 }
-main p:nth-of-type(2n+1){
-    border-color: purple;
-    margin-right: 20%;
-}
-main p:nth-of-type(2n+1):hover{
-    background-color:  purple;
-}
-main p:nth-of-type(2n)
-{
-    border-color: yellow;
-    margin-left: 20%;
-}
-main p:nth-of-type(2n):hover
-{
-    background-color: rgba(255, 153, 0, 0.673);
 
+.cancel-btn {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
 }
-@media (min-width:650px){
-    h2{
-    text-align: center;
-    font-size: 4em;
-    margin-top: 2vh;
-    }
-    main p{
-        flex-grow: 1;
-        font-size: 3vh;
-    }
-
+.eras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
 }
-@media (max-width:650px){
-    h2{
-    text-align: center;
-    margin-top: 2vh;
+.era {
+    height: 10vh;
+    width: fit-content;
+    margin: 2vh 2vw;
+    padding: 1em 2em;
+    padding-bottom: 2em;
+    border-radius: 2vh;
     font-size: 2em;
-    }
-    main p{
-        flex-grow:1;
-        font-size:2vh;
-    }
+    box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+    border: none; 
 }
-#era1 h3{
-    text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-    font-size:2em;
-}
-#era1 p:hover{
-    background-color: purple;
-}
-#era2 h3{
-    text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-    font-size:2em;
-}
-#era2 p{
-    border-color: yellow;
-    margin-right: 0;
-    margin-left: 10%;
-}
-#era2 p:hover{
-    background-color: rgba(255, 153, 0, 0.673);
 
+.eraStory {
+    margin: 2vh 5%;
+    color: white;
+    padding: 1em;
+    border-radius: 2vh;
+    position:relative;
 }
-#era3 h3{
-    text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-    font-size:2em;
+.eraStory p {
+    font-size: 1em;
+    text-align: justify;
+    padding: 1em;
 }
-#era3 p:hover{
-    background-color: purple;
+.eraStory h3 {
+    color:#FFF;
 }
-#era4 h3{
-    text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-    font-size:2em;
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 3s ease;
 }
-#era4 p{
-    border-color: yellow;
-    margin-right: 0;
-    margin-left: 10%;
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
-#era4 p:hover{
-    background-color: rgba(255, 153, 0, 0.673);
+
+.delay1 {
+    transition-delay: 1s;
 }
-#era5 h3{
-    text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-    font-size:2em;
+
+.delay2 {
+    transition-delay: 2s;
 }
-#era5 p:hover{
-    background-color: purple;
+.delay3 {
+    transition-delay: 3s;
+}
+@media (max-width: 650px) {
+    .eras {
+        flex-direction: column;
+        align-items: center;
+    }
+    .era {
+        margin: 2vh 5%;
+    }
+    .eraStory h3 {
+        font-size: 1.5em;
+    }
 }

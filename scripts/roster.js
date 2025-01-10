@@ -45,7 +45,6 @@ function buildRoster() {
     button.addEventListener('click', () => {
         const playerId = button.dataset.player;
         idcounter = parseInt(playerId, 10);
-        console.log(idcounter);
         showPlayerStats(idcounter);
     })});   
 }
@@ -69,15 +68,11 @@ function showPlayerStats(playerId) {
                                 <div class="player-profile">
                                     <button class="btn left" onclick="
                                     if (${idcounter} != 1) {idcounter -= 1; 
-                                    if (idcounter === 11) 
-                                    rightButton.classList.remove('disabled');
                                     showPlayerStats(idcounter);}"
                                     ><i class="fas fa-chevron-left"></i></button>
                                     <img src=${stats.image} alt="${stats.name}">
                                     <button class="btn right" onclick = "
                                     if (${idcounter} != 12) {idcounter += 1;
-                                    if (idcounter === 2) 
-                                    leftButton.classList.remove('disabled');
                                     showPlayerStats(idcounter);}"
                                     ><i class="fas fa-chevron-right"></i></button>
                                 </div>
@@ -163,8 +158,8 @@ function showPlayerStats(playerId) {
             </div>`
     document.querySelector('.build').innerHTML = rosterHTML;
 
-    const leftButton = document.querySelector('.left');
-    const rightButton = document.querySelector('.right');
+    leftButton = document.querySelector('.left');
+    rightButton = document.querySelector('.right');
 
 
     currentEventListener = (event) => {
@@ -185,7 +180,8 @@ function showPlayerStats(playerId) {
                 }
         } 
     };
-
+    leftButton.classList.remove('disabled');
+    rightButton.classList.remove('disabled');
     
     if (idcounter === 1) {
         leftButton.classList.add('disabled');

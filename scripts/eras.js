@@ -38,5 +38,5 @@ const eras = [
 const home = {
     title: "Lakers History",
     text1: " The Los Angeles Lakers franchise has a long and storied history. The franchise traces its roots to the NBL's Detroit Gems which was formed in 1946 and relocated to Minneapolis in 1947 to become the Lakers.",
-    text2: "The Lakers are one of the NBA's most famous and successful franchises. As of August 2024, the Lakers are second in the NBA's all-time records for wins (3,550) and winning percentage (.591), and hold the all-time record for most NBA Finals appearances (32). They are second in NBA championship wins with 17, just behind the Boston Celtics with 18 NBA titles, and with nine more Finals appearances than the Celtics, their biggest rival.",
+    text2: "The Lakers are one of the NBA's most famous and successful franchises. The Lakers are second in the NBA's all-time records for wins (3,550) and winning percentage (.591), and hold the all-time record for most NBA Finals appearances (32). They are second in NBA championship wins with 17, just behind the Boston Celtics with 18 NBA titles."
 }

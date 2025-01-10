@@ -265,7 +265,7 @@ table tr > td:first-child{
 }
 .cancel-btn {
     position: absolute;
-    right: 2%;
+    right: 5%;
     top: 2%;
 }
 .disabled {
