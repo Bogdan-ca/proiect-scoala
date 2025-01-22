@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Bogdan Caraeane">
-        <meta name="description" content="Lakers login page">
+        <meta name="description" content="Lakers account page">
         <link rel="icon" href="svg/basketball-icon.svg" type="image/x-icon">
         <title>Lakers 2023-2024 season</title>
         <link rel="stylesheet" href="styles/account.css">
@@ -32,43 +32,54 @@
             </div>
         </header>
             <main>
-                <div class="container" id="container">
-                    <div class="form-container sign-up">
-                        <form>
-                            <h2>Create Account</h2>
-                            <input type="text" id="username-input" placeholder="Username">
-                            <input type="password" id="password-input" placeholder="Password">
-                            <input type="password" id="repeat-password-input"  placeholder="Repeat Password">
-                            <button>Sign Up</button>
-                        </form>
+                <div class="account-container">
+                    <div class="account-card">
+                        <h2 class="welcome-user">Welcome back, <span id="username"></span></h2>
+                        
+                        <div class="player-select">
+                            <h3>Select Favorite Player</h3>
+                            <select id="player-select">
+                                <option value="">Choose a player</option>
+                                
+                            </select>
+                        </div>
+                        <button class="logout" onclick="randomizePlayer()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                                <path d="M160-160v-160h160v160H160Zm240 0v-160h160v160H400Zm240 0v-160h160v160H640ZM160-400v-160h160v160H160Zm240 0v-160h160v160H400Zm240 0v-160h160v160H640ZM160-640v-160h160v160H160Zm240 0v-160h160v160H400Zm240 0v-160h160v160H640Z"/>
+                            </svg>
+                            Random Player
+                        </button>
+                        <button class="logout" onclick="savePlayer()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                                <path d="M840-680v480q0 33-23.5 56.5T760-120H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h480l160 160Zm-80 34L646-760H200v560h560v-446ZM480-240q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM240-560h360v-160H240v160Zm-40-86v446-560 114Z"/>
+                            </svg>
+                            Save Selection
+                        </button>
+                        
+                        <button class="logout" onclick="logout()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                                <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/>
+                            </svg>
+                            Logout
+                        </button>
                     </div>
-                    <div class="form-container sign-in">
-                        <form>
-                            <h2>Sign In</h2>
-                            <span>or use your email password</span>
-                            <input type="text" id="username-input-login" placeholder="Username">
-                            <input type="password" id="password-input-login" placeholder="Password">
-                            <a href="#">Forget Your Password?</a>
-                            <button>Sign In</button>
-                        </form>
-                    </div>
-                    <div class="toggle-container">
-                        <div class="toggle">
-                            <div class="toggle-panel toggle-left">
-                                <h2>Welcome Back!</h2>
-                                <p>Enter your personal details to use all of site features</p>
-                                <button class="hidden" id="login">Sign In</button>
-                            </div>
-                            <div class="toggle-panel toggle-right">
-                                <h2>Hello, Friend!</h2>
-                                <p>Register with your personal details to use all of site features</p>
-                                <button class="hidden" id="register">Sign Up</button>
-                            </div>
+                </div>
+                <div class="favorite-player">
+                    <h3>Your Favorite Player</h3>
+                    <div class="player-card">
+                        <div class="player-info">
+                            <h4 id="player-name">No player selected</h4>
+                            <p id="player-number"></p>
+                            <p id="player-position"></p>
+                        </div>
+                        <div class="player-stats">
+                            <p>Points: <span id="player-points">-</span></p>
+                            <p>Assists: <span id="player-assists">-</span></p>
+                            <p>Rebounds: <span id="player-rebounds">-</span></p>
                         </div>
                     </div>
                 </div>
-            
-                <script src="scripts/account.js"></script>
-            </body>
             </main>
+        <script src="scripts/players.js"></script>
+        <script src="scripts/login.js"></script>
     </body>

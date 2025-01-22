@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bogdan Caraeane">
+        <meta name="description" content="Lakers login page">
+        <link rel="icon" href="svg/basketball-icon.svg" type="image/x-icon">
+        <title>Lakers 2023-2024 season</title>
+        <link rel="stylesheet" href="styles/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="nav-bar">                       
+                    <h1>Lakers statistics 2023-2024</h1>
+                <input type="checkbox" id="check">
+                <div class="menu">
+                    <ul>
+                        <li class="logo"><a href="sitelak.html">
+                        <img src="svg/lakers-logo.svg" alt="Lakers logo"></a></li>
+                        <li><a href="roster.html">Roster</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </div>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </div>
+        </header>
+            <main>
+                <div class="container" id="container">
+                    <div class="form-container sign-up">
+                        <form>
+                            <h2 class="titlu">Create Account</h2>
+                            <input type="text" id="username-input" placeholder="Username">
+                            <input type="password" id="password-input" placeholder="Password">
+                            <input type="password" id="repeat-password-input"  placeholder="Repeat Password">
+                            <button>Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in">
+                        <form>
+                            <h2 class="titlu">Sign In</h2>
+                            <input type="text" id="username-input-login" placeholder="Username">
+                            <input type="password" id="password-input-login" placeholder="Password">
+                            <button>Sign In</button>
+                        </form>
+                    </div>
+                    <div class="toggle-container">
+                        <div class="toggle">
+                            <div class="toggle-panel toggle-left">
+                                <h2>Welcome Back!</h2>
+                                <p>Log in to use all of site features</p>
+                                <button class="hidden" id="login">Sign In</button>
+                            </div>
+                            <div class="toggle-panel toggle-right">
+                                <h2>Hello!</h2>
+                                <p>Register to use all of site features</p>
+                                <button class="hidden" id="register">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <script src="scripts/login.js"></script>
+            </body>
+            </main>
+    </body>
