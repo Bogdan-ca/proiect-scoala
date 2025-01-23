@@ -322,6 +322,7 @@ main{
 }
 
 .toggle-right{
+    
     right: 0;
     transform: translateX(0);
 }

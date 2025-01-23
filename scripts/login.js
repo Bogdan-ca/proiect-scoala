@@ -234,9 +234,13 @@ function updatePlayerDisplay(playerId) {
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
     }
 }
-document.getElementById('player-select').addEventListener('change', (e) => {
-    updatePlayerDisplay(e.target.value);
-});
+const element = document.querySelector(".favorite-player")
+if (element) {
+    document.getElementById('player-select').addEventListener('change', (e) => {
+        updatePlayerDisplay(e.target.value);
+    });
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
