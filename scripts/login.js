@@ -155,22 +155,18 @@ function savePlayer() {
         currentUser.favoritePlayer = selectedPlayer;
         const userIndex = users.findIndex(u => u.username === currentUser.username);
         users[userIndex] = currentUser;
+        const player = roster.find(p => p.id == selectedPlayer)
         
         
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
         localStorage.setItem('users', JSON.stringify(users));
         
-        alert(`Favorite player ${selectedPlayer} saved!`);
+        alert(`Favorite player ${player.name} saved!`);
         
 }
 function randomizePlayer() {
         const playerSelect = document.getElementById('player-select');
         const options = Array.from(playerSelect.options).slice(1);
-        
-        if (options.length === 0) {
-            alert('No players available');
-            return;
-        }
         
         const randomIndex = Math.floor(Math.random() * options.length);
         const randomPlayer = options[randomIndex];
@@ -238,7 +234,6 @@ function updatePlayerDisplay(playerId) {
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
     }
 }
-
 document.getElementById('player-select').addEventListener('change', (e) => {
     updatePlayerDisplay(e.target.value);
 });
